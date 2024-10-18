@@ -1,0 +1,127 @@
+
+
+/* section 2 22222222222222222222222222222222222222222222222222222222222222222222 */
+section.about_2 {
+    /* background-color: red; */
+    height: 90vh;
+    width: 100%;
+    margin-top: 100px;
+    padding: 0% 0%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* div_1 et leur conposnates =========================================*/
+
+.divA_12 {
+    /* background-color: yellow; */
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pA_22,
+.div_btn_home {
+    padding-top: 50px;
+
+
+}
+
+.pA_12 {
+    font-size: 50px;
+    font-weight: bold;
+    /* top: 190px; */
+    /* text-align: center; */
+    /* justify-content: start; */
+    /* align-items: start; */
+
+    display: block;
+    padding-bottom: 5%;
+    margin-left: -20%;
+}
+
+.pA_22 {
+    font-size: 20px;
+    justify-content: start;
+    padding: 2% 15%;
+    display: block;
+
+
+}
+
+.div_btn_home {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 20px;
+    width: 25%;
+}
+
+.btn_home {
+    background-color: #505f98;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.btn_home a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* div_2 et leur conposnates =========================================*/
+.divA_22 {
+    background-color: orange;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.divA_22 img {
+    width: 570px;
+    height: 700px;
+    margin-top: 0%;
+}
+
+.divA_12_ {
+    /* background-color: chartreuse; */
+    display: flex;
+    margin: 0 15% 0 15%;
+}
+
+.divA_1_1 {
+    /* background-color: brown; */
+
+}
+
+.divA_1_2 {
+    /* background-color: #63c02d; */
+}
+
+.divA_1_1,
+.divA_1_2 {
+    padding: 2%;
+}
+
+.divA_1_1 img,
+.divA_1_2 img {
+    padding: 4%;
+}
+
+.divA_1_1 h1,
+.divA_1_2 h1 {
+    padding: 4%;
+    font-weight: bolder;
+}
+
+/* 22222222222222222222222222222222222222222222222222222222222222222222 */
+/* ================================================================= */
+

@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;700;800&display=swap");
+
+/* Réinitialisation des styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    overflow-y: scroll;
+    font-family: "Lato", sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* line-height: 1; */
+    /* background: #e7e7e7; */
+    /* padding-top: 100px; */
+}
+
+/* Pour Chrome, Safari, et autres navigateurs basés sur WebKit */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+header.header {
+    background-color: transparent;
+    /* background-color: rgb(200, 224, 153); */
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    flex-direction: row;
+/* pour scroller (background) */
+    position: sticky;
+    transition: background-color 0.3 ease-in-out;
+
+}
+
+
+/* ============== lorsque en scrolle , le background de la header sera changer */
+/* header.header {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+} */
+
+header.sticky {
+    background-color: #E7ECFF; 
+    transition: background-color 0.1s ease-in-out;
+}
+
+/* ============== */
+
+.img {
+    width: 150px;
+    margin-top: -23%;
+}
+
+.menu2 li,
+.menu1 li {
+    list-style: none;
+    padding: 10%;
+}
+
+.menu1 li {
+    margin-right: 20px;
+}
+
+.menu1 li a,
+.menu2 li a,
+.btn_buy a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu2 {
+    display: none;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 15px;
+    margin-left: -45px;
+}
+
+
+
+.menu1 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.menu1 ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu1 .li_menu {
+    margin-right: -30px;
+}
+
+
+
+.menu1 li a {
+    background: transparent;
+    color: #505F98;
+    padding: 16px 28px;
+    text-transform: capitalize;
+    display: inline-block;
+    font-size: 0.9rem;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+    font-weight: 600;
+}
+
+.menu1 li a:hover {
+    background: #505F98;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.btns_header{
+    
+    position: absolute;
+    /* background-color: red; */
+    transform: translateY(-50%);
+    height: 70px;
+    width: 500px;
+    top: 50%;
+    right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.btns_header button{
+    
+    width: 55px ;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.btn_buy {
+    background-color: #091133;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 5px;
+}
+
+.btn_buy a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.btn_buy_a:hover{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.btn_buy:hover{
+    background-color: #505f98;
+    border: 3px solid #fff;
+    color: #091133;
+}
+
+
+
+
+
+
+/*  header pour tablet  et les smartphone  */
+@media only screen and (min-width: 800px) {
+    .menu2{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 580px) and (max-width: 800px) {
+    .header{
+        width: 100%;
+         height: 200px;
+         flex-direction: row;
+         align-items: center;
+
+    }
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-25%);
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 15px;
+        margin-left: -90px;
+    }
+
+    .menu2 , .box {
+        display: block;
+        /* margin-left: 30%; */
+    }
+
+    .menu1 {
+        display: none;
+    }
+
+    .btn_buy {
+        /* margin-right: 6px; */
+        margin: auto;
+
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-25%);
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 15px;
+        margin-left: -90px;
+    }
+
+    .menu2 {
+        display: block;
+        margin-left: 30%;
+    }
+
+    .menu1 {
+        display: none;
+    }
+
+    .btn_buy {
+        margin-right: 6px;
+        padding: 10px;
+    }
+}
+
+
+/*============================== box header  =================================*/
+
+.menubar {
+    height: 7px;
+    width: 50px;
+    background-color: #505f98;
+    border-radius: 10px;
+    margin: 7px;
+    transition: 0.7s;
+}
+
+.box {
+    height: 60px;
+    width: 60px;
+    top: 10px;
+    right: 10px;
+    /* display: none; */
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.menubar {
+    z-index: -1;
+}
+
+#checkbox {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+#checkbox:checked~div:nth-of-type(1) {
+    transform: translate(0, 22px) rotate(40deg);
+    background-color: #505f98;
+}
+
+#checkbox:checked~div:nth-of-type(2) {
+    opacity: 0;
+}
+
+#checkbox:checked~div:nth-of-type(3) {
+    transform: translate(0, -6px) rotate(-40deg);
+    background-color: #505f98;
+}
+
+.menu {
+    margin-right: 50%;
+    border-radius: 5%;
+    width: 30vh;
+    height: 30vh;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #505f98;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    padding: 10px;
+    align-content: center;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.list li {
+    padding: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.list li:hover {
+    background-color: #f0f0f0;
+}
+
+#checkbox:checked~.menu {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  le style des bottons +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.boutton1 {
+    background-color: #091133;
+    height: 55px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #091133;
+    border-radius: 5px;
+
+    /* padding: 1% 1% 1% 1%; */
+    /* margin:; */
+}
+
+.boutton2 {
+    background-color: white;
+    height: 55px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #091133;
+    border-radius: 5px;
+
+    /* padding: 1% 1% 1% 1%; */
+    /* margin:; */
+}
+
+.boutton1 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.boutton2 a {
+    text-decoration: none;
+    color: #091133;
+    font-size: 25px;
+}
+
+.boutton1:hover {
+    background-color: #505f98;
+    border: 3px solid #091133;
+    color: #091133;
+
+}
+
+.boutton2:hover {
+    background-color: #505f98;
+    border: 3px solid white;
+
+}
+
+
+.btn_dark{
+    background-color: white;
+    height: 55px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #091133;
+    border-radius: 5px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+
+/* mode sombre---------------------------------------------------------------------------------- */
+/* body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+} */
+
+/* Mode sombre (préférences utilisateur) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+    footer{
+        background-color: #1e1e1e;
+        color: white;
+    }
+    header.sticky {
+        background-color: #1e1e1e; 
+        transition: background-color 0.1s ease-in-out;
+    }
+}

@@ -1,0 +1,60 @@
+body {
+
+    background-color: white;
+
+    color: black;
+
+}
+
+
+.dark {
+
+    background-color: #121212;
+
+    color: white;
+
+}
+.dark header , .dark footer  {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark .btns_header button{
+    
+}
+
+.dark header svg {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    color: white;
+}
+
+.dark header.btn_buy{
+
+    border:8px solid white;
+
+    color: white;
+
+}
+
+
+
+
+/* Mode sombre (préférences utilisateur) */
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+    footer{
+        background-color: #1e1e1e;
+        color: white;
+    }
+    header.sticky {
+        background-color: #1e1e1e; 
+        transition: background-color 0.1s ease-in-out;
+    }
+} */

@@ -1,0 +1,117 @@
+.contact_1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: -2.1%;
+}
+
+.div_cont1 {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.div_cont1 svg {
+    /* background-color: rebeccapurple; */
+    width: 90%;
+    height: 100%;
+    margin-top: -10%;
+}
+
+.div_cont2 {
+    /* background-color: orangered; */
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.forme {
+    /* background-color: yellow; */
+    width: 90%;
+    height: 100%;
+    margin: 2%;
+    padding: 3%;
+}
+
+.forme input,
+.forme textarea {
+    height: 60px;
+    width: 80%;
+    margin-bottom: 3%;
+    border: none;
+    background-color: #E7ECFF;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.forme textarea {
+    height: 100px;
+    width: 80%;
+    margin-bottom: 5%;
+    border: none;
+    background-color: #E7ECFF;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.forme p {
+    /* background-color: #E7ECFF; */
+    font-size: 50px;
+    margin: 5% 10% 5% 10%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;}
+
+.forme .bottton {
+    /* background-color: #505f98; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+/* section contact_2 ======================================== */
+
+section.contact_2 {
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.map {
+    /* background-color: yellow; */
+    width: 80%;
+    text-align: center;
+    height: 80vh;
+}
+
+.map img {
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100%;
+}
+
+.map_right {
+    background-color: #E7ECFF;
+    width: 20%;
+    height: 80vh;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.map_p {
+    font-size: 50px;
+    margin-top: 20%;
+}
